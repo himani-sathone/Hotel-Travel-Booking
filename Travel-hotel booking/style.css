@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,600;1,600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #30477c;
+    --primary-color-dark: #425fa2;
+    --text-dark: #262626;
+    --text-light: #63667b;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family:  "Roboto", sans-serif;
+
+}
+
+nav{
+    max-width: var(--max-width) ;
+    margin:auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav_logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    font-weight: 500;
+    color: var(--text-light);
+    transition: 0.3s;
+}
+.link a:hover{
+    color: var(--primary-color);
+}
+
+.header_container{
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.header_image_container{
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(to right, rgba(44,56,85,.9),rgba(100,125,187,.1)) ,
+    url("assets/header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+.header_content{
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+
+.header_content h1{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.header_content p {
+  color: var(--extra-light);
+}
+
+.booking_container{
+    position: absolute;
+    bottom: -5rem;
+    left:50%;
+    transform: translateX(-50%);
+    width: calc(100% - 6rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    background-color: rgba(255, 255,255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter : blur(10px) ;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+}
+
+.booking_container form{
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
